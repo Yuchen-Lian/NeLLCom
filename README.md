@@ -6,10 +6,15 @@
 ## Introduction
 
 NeLLCom is a framework that allows researchers to quickly implement multi-agent miniature language learning games. 
+
 In such games, the agents are firstly trained to listen or speak predefined languages via Supervised Learning (SL) 
 and then pairs of speaking and listening agents talk to each other while optimizing communication success via Reinforcement Learning (RL).
+
 The implementation of NeLLCom is partly based on EGG toolkit.
 
+More details can be found in our TACL paper, 
+titled "Communication Drives the Emergence of Language Universals in Neural Agents: Evidence from the Word-order/Case-marking Trade-off":
+[arxiv](https://arxiv.org/abs/2301.13083)
 
 ## List of Explored Language Features
 
@@ -30,12 +35,12 @@ Listening Agent
 
 Generally, we assume that you use PyTorch 1.1.0 or newer and Python 3.6 or newer.
 
-1. Installing EGG toolkit following https://github.com/facebookresearch/EGG.git.
+1. Installing [EGG](https://github.com/facebookresearch/EGG.git.) toolkit;
 2. Moving to the EGG game design folder:
    ```
    cd EGG/egg/zoo
    ```
-3. Cloning the NeLLCom under the EGG game design folder:
+3. Cloning the NeLLCom into the EGG game design folder:
    ```
    git clone git@github.com:Yuchen-Lian/NeLLCom.git
    cd NeLLCom
@@ -45,7 +50,7 @@ Generally, we assume that you use PyTorch 1.1.0 or newer and Python 3.6 or newer
     python -m egg.zoo.NeLLCom.train --n_epochs=60
     ```
 
-## EGG structure
+## NeLLCom structure
 
 * `data/` contains the full dataset of the predefined artificial languages that are used in the paper.
 * `train.py` contain the actual logic implementation.
